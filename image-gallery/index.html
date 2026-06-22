@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery | Swetalin Rout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="grain"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-glow"></div>
+    <p class="header-eyebrow">Curated Collection</p>
+    <h1 class="header-title">Photo Gallery</h1>
+    <p class="header-sub">A visual journey through nature, cities, people &amp; abstracts — hover to explore</p>
+  </header>
+
+  <!-- Filter Bar -->
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="nature">Nature</button>
+    <button class="filter-btn" data-filter="city">City</button>
+    <button class="filter-btn" data-filter="abstract">Abstract</button>
+    <button class="filter-btn" data-filter="people">People</button>
+  </div>
+
+  <!-- Gallery Grid -->
+  <main class="gallery" id="gallery">
+
+    <div class="gallery-item gi-wide" data-category="nature">
+      <img src="https://picsum.photos/seed/forest1/900/600" alt="Forest Path" loading="lazy" />
+      <div class="overlay">
+        <span class="cat-badge">Nature</span>
+        <div class="caption-wrap">
+          <span class="caption">Forest Path</span>
+          <span class="caption-sub">Sunlight through ancient trees</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item gi-tall" data-category="city">
+      <img src="https://picsum.photos/seed/city1/600/900" alt="City Lights" loading="lazy" />
+      <div class="overlay">
+        <span class="cat-badge city">City</span>
+        <div class="caption-wrap">
+          <span class="caption">City Lights</span>
+          <span class="caption-sub">Urban glow after dark</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="abstract">
+      <img src="https://picsum.photos/seed/abstract1/600/450" alt="Abstract Forms" loading="lazy" />
+      <div class="overlay">
+        <span class="cat-badge abstract">Abstract</span>
+        <div class="caption-wrap">
+          <span class="caption">Abstract Forms</span>
+          <span class="caption-sub">Shapes without boundaries</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="people">
+      <img src="https://picsum.photos/seed/people1/600/450" alt="Portrait Study" loading="lazy" />
+      <div class="overlay">
+        <span class="cat-badge people">People</span>
+        <div class="caption-wrap">
+          <span class="caption">Portrait Study</span>
+          <span class="caption-sub">Faces tell stories</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="nature">
+      <img src="https://picsum.photos/seed/ocean2/600/450" alt="Ocean Waves" loading="lazy" />
+      <div class="overlay">
+        <span class="cat-badge">Nature</span>
+        <div class="caption-wrap">
+          <span class="caption">Ocean Waves</span>
+          <span class="caption-sub">Endless blue horizon</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="city">
+      <img src="https://picsum.photos/seed/street2/600/450" alt="Street Scene" loading="lazy" />
+      <div class="overlay">
+        <span class="cat-badge city">City</span>
+        <div class="caption-wrap">
+          <span class="caption">Street Scene</span>
+          <span class="caption-sub">Life in motion</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item gi-wide" data-category="abstract">
+      <img src="https://picsum.photos/seed/geo3/900/600" alt="Geometric Shapes" loading="lazy" />
+      <div class="overlay">
+        <span class="cat-badge abstract">Abstract</span>
+        <div class="caption-wrap">
+          <span class="caption">Geometric Shapes</span>
+          <span class="caption-sub">Order inside chaos</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="nature">
+      <img src="https://picsum.photos/seed/mountain4/600/450" alt="Mountain Peak" loading="lazy" />
+      <div class="overlay">
+        <span class="cat-badge">Nature</span>
+        <div class="caption-wrap">
+          <span class="caption">Mountain Peak</span>
+          <span class="caption-sub">Above the clouds</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="people">
+      <img src="https://picsum.photos/seed/crowd5/600/450" alt="Crowd Energy" loading="lazy" />
+      <div class="overlay">
+        <span class="cat-badge people">People</span>
+        <div class="caption-wrap">
+          <span class="caption">Crowd Energy</span>
+          <span class="caption-sub">Together as one</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="city">
+      <img src="https://picsum.photos/seed/arch6/600/450" alt="Architecture" loading="lazy" />
+      <div class="overlay">
+        <span class="cat-badge city">City</span>
+        <div class="caption-wrap">
+          <span class="caption">Architecture</span>
+          <span class="caption-sub">Steel and glass dreams</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="abstract">
+      <img src="https://picsum.photos/seed/color7/600/450" alt="Color Study" loading="lazy" />
+      <div class="overlay">
+        <span class="cat-badge abstract">Abstract</span>
+        <div class="caption-wrap">
+          <span class="caption">Color Study</span>
+          <span class="caption-sub">Pigment and emotion</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="nature">
+      <img src="https://picsum.photos/seed/sunset8/600/450" alt="Golden Sunset" loading="lazy" />
+      <div class="overlay">
+        <span class="cat-badge">Nature</span>
+        <div class="caption-wrap">
+          <span class="caption">Golden Sunset</span>
+          <span class="caption-sub">Day's final painting</span>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+    <button class="lb-close" id="lb-close" aria-label="Close">✕</button>
+    <button class="lb-prev" id="lb-prev" aria-label="Previous">&#8592;</button>
+    <button class="lb-next" id="lb-next" aria-label="Next">&#8594;</button>
+    <div class="lb-inner">
+      <img src="" alt="" id="lb-img" />
+      <div class="lb-info">
+        <p id="lb-caption"></p>
+        <span id="lb-counter"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>Gallery by <a href="https://github.com/swetalin-10" target="_blank">Swetalin Rout</a> · Built with HTML &amp; CSS</p>
+  </footer>
+
+  <script>
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const items      = document.querySelectorAll('.gallery-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        items.forEach(item => {
+          const show = filter === 'all' || item.dataset.category === filter;
+          item.style.display = show ? '' : 'none';
+        });
+      });
+    });
+
+    const lightbox  = document.getElementById('lightbox');
+    const lbImg     = document.getElementById('lb-img');
+    const lbCaption = document.getElementById('lb-caption');
+    const lbCounter = document.getElementById('lb-counter');
+    let currentIndex = 0;
+    let visibleItems = [];
+
+    function getVisible() {
+      return [...items].filter(i => i.style.display !== 'none');
+    }
+
+    function openLightbox(index) {
+      visibleItems = getVisible();
+      currentIndex = index;
+      const item = visibleItems[currentIndex];
+      lbImg.src = item.querySelector('img').src;
+      lbCaption.textContent = item.querySelector('.caption').textContent;
+      lbCounter.textContent = `${currentIndex + 1} / ${visibleItems.length}`;
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    items.forEach(item => {
+      item.addEventListener('click', () => {
+        visibleItems = getVisible();
+        openLightbox(visibleItems.indexOf(item));
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    document.getElementById('lb-close').addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+
+    document.getElementById('lb-prev').addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + visibleItems.length) % visibleItems.length;
+      openLightbox(currentIndex);
+    });
+    document.getElementById('lb-next').addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % visibleItems.length;
+      openLightbox(currentIndex);
+    });
+
+    document.addEventListener('keydown', e => {
+      if (!lightbox.classList.contains('active')) return;
+      if (e.key === 'Escape')      closeLightbox();
+      if (e.key === 'ArrowLeft')   document.getElementById('lb-prev').click();
+      if (e.key === 'ArrowRight')  document.getElementById('lb-next').click();
+    });
+  </script>
+
+</body>
+</html>

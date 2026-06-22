@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MemoraX — AI-Powered Study Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="grain"></div>
+
+  <!-- CSS-only hamburger toggle -->
+  <input type="checkbox" id="nav-toggle" class="nav-toggle-input" />
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a class="nav-brand" href="#home">Memora<span>X</span></a>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Get Started ↗</a>
+    <label for="nav-toggle" class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </label>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu">
+    <ul>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact" class="mobile-cta">Get Started ↗</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-blob hb1"></div>
+    <div class="hero-blob hb2"></div>
+    <div class="hero-blob hb3"></div>
+
+    <div class="hero-inner">
+      <div class="hero-left">
+        <span class="hero-badge">
+          <span class="badge-dot"></span>
+          Powered by Google Gemini AI
+        </span>
+        <h1 class="hero-heading">
+          Study Smarter.<br>
+          <span class="grad-text">Not Harder.</span>
+        </h1>
+        <p class="hero-sub">MemoraX transforms your PDFs and notes into AI-powered flashcards, quizzes, and summaries — helping you retain more in less time.</p>
+        <div class="hero-btns">
+          <a href="https://memora-x-8xq4.vercel.app/" target="_blank" class="btn-primary">
+            <span>Try MemoraX</span>
+            <span class="btn-icon">↗</span>
+          </a>
+          <a href="#features" class="btn-ghost">Explore Features</a>
+        </div>
+        <p class="hero-note">✦ Free to use · No sign-up required to explore</p>
+      </div>
+
+      <div class="hero-right">
+        <div class="card-demo">
+          <div class="card-demo-header">
+            <div class="cd-dots">
+              <span class="cd-dot red"></span>
+              <span class="cd-dot yellow"></span>
+              <span class="cd-dot green"></span>
+            </div>
+            <span class="cd-label">AI Flashcard</span>
+          </div>
+          <div class="card-demo-body">
+            <span class="cd-tag">🧠 Neural Networks</span>
+            <p class="cd-q">What is backpropagation?</p>
+            <div class="cd-divider"></div>
+            <p class="cd-a">An algorithm that calculates gradients by propagating errors backward through a neural network to update weights and minimise loss.</p>
+            <div class="cd-footer">
+              <span class="cd-nav-btn">← Prev</span>
+              <span class="cd-count">3 / 12</span>
+              <span class="cd-nav-btn active">Next →</span>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span class="scroll-line"></span>
+      <span class="scroll-label">scroll</span>
+    </div>
+  </section>
+
+  <!-- Stats Bar -->
+  <div class="stats-bar">
+    <div class="container stats-inner">
+      <div class="stat-item">
+        <span class="stat-num">6+</span>
+        <span class="stat-label">AI Features</span>
+      </div>
+      <span class="stat-sep"></span>
+      <div class="stat-item">
+        <span class="stat-num">3×</span>
+        <span class="stat-label">Faster Revision</span>
+      </div>
+      <span class="stat-sep"></span>
+      <div class="stat-item">
+        <span class="stat-num">∞</span>
+        <span class="stat-label">Documents</span>
+      </div>
+      <span class="stat-sep"></span>
+      <div class="stat-item">
+        <span class="stat-num">100%</span>
+        <span class="stat-label">AI-Powered</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Problem -->
+  <section class="section problem" id="problem">
+    <div class="container">
+      <p class="eyebrow">The Problem</p>
+      <h2 class="sec-title">Students Struggle to Retain<br>What They Study</h2>
+      <div class="prob-grid">
+        <div class="prob-card">
+          <span class="prob-icon">😴</span>
+          <h3>Passive Learning Trap</h3>
+          <p>Reading PDFs without active engagement leads to shallow understanding and poor long-term recall.</p>
+        </div>
+        <div class="prob-card">
+          <span class="prob-icon">⏱</span>
+          <h3>Time-Consuming Prep</h3>
+          <p>Manually creating flashcards and quizzes takes hours that could be spent actually learning.</p>
+        </div>
+        <div class="prob-card">
+          <span class="prob-icon">📉</span>
+          <h3>No Progress Insights</h3>
+          <p>Without analytics, students can't identify weak areas or track improvement over time.</p>
+        </div>
+        <div class="prob-card">
+          <span class="prob-icon">🔀</span>
+          <h3>Tool Fragmentation</h3>
+          <p>Switching between multiple apps for notes, flashcards, and quizzes wastes valuable study time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section features" id="features">
+    <div class="container">
+      <p class="eyebrow">Why MemoraX?</p>
+      <h2 class="sec-title">Everything You Need to Ace Your Studies</h2>
+      <div class="features-grid">
+
+        <div class="feat-card fc-wide fc-violet">
+          <div class="feat-icon-wrap">📄</div>
+          <div class="feat-body">
+            <h3>Document Upload &amp; Viewer</h3>
+            <p>Upload PDFs, Word docs, and plain text. Built-in viewer — no extra software needed. Organise and access multiple documents effortlessly with fast access and complete control.</p>
+            <span class="feat-tag">Upload · View · Manage</span>
+          </div>
+        </div>
+
+        <div class="feat-card fc-cyan">
+          <div class="feat-icon-wrap">🧠</div>
+          <div class="feat-body">
+            <h3>AI Flashcards</h3>
+            <p>Gemini AI extracts key concepts and builds perfectly worded flashcards in seconds — not hours.</p>
+            <span class="feat-tag">Gemini AI</span>
+          </div>
+        </div>
+
+        <div class="feat-card fc-rose">
+          <div class="feat-icon-wrap">📝</div>
+          <div class="feat-body">
+            <h3>Auto-Quiz Builder</h3>
+            <p>MCQs, true/false, and short-answer questions auto-generated directly from your uploaded content.</p>
+            <span class="feat-tag">MCQ · T/F · Short Answer</span>
+          </div>
+        </div>
+
+        <div class="feat-card fc-green">
+          <div class="feat-icon-wrap">💬</div>
+          <div class="feat-body">
+            <h3>Chat with Documents</h3>
+            <p>Ask questions directly about your uploaded documents. AI answers with full document context and persistent history.</p>
+            <span class="feat-tag">Context-Aware AI</span>
+          </div>
+        </div>
+
+        <div class="feat-card fc-warm">
+          <div class="feat-icon-wrap">✏️</div>
+          <div class="feat-body">
+            <h3>PDF Annotation</h3>
+            <p>Draw, highlight, and mark up your study materials directly in the browser. Erase and redo with confidence.</p>
+            <span class="feat-tag">Highlight · Draw · Erase</span>
+          </div>
+        </div>
+
+        <div class="feat-card fc-wide fc-violet">
+          <div class="feat-icon-wrap">📊</div>
+          <div class="feat-body">
+            <h3>Analytics Dashboard</h3>
+            <p>Track quiz performance, flashcard mastery, study streaks, and weekly consistency — all in one clean visual dashboard powered by Recharts. Understand exactly what drives your results.</p>
+            <span class="feat-tag">Performance · Streaks · Mastery</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section how" id="how">
+    <div class="container">
+      <p class="eyebrow">Simple Process</p>
+      <h2 class="sec-title">Up and Running in 3 Steps</h2>
+      <div class="steps">
+
+        <div class="step">
+          <div class="step-left">
+            <div class="step-num">01</div>
+            <div class="step-line"></div>
+          </div>
+          <div class="step-body">
+            <h3>Upload Your Material</h3>
+            <p>Drop any PDF, Word doc, or text file into MemoraX. Storage and processing are handled automatically via Cloudinary — no manual setup required.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-left">
+            <div class="step-num">02</div>
+            <div class="step-line"></div>
+          </div>
+          <div class="step-body">
+            <h3>AI Generates Everything</h3>
+            <p>Google Gemini processes your content and instantly creates flashcards, quizzes, summaries, and document chat context — no manual work needed.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-left">
+            <div class="step-num">03</div>
+          </div>
+          <div class="step-body">
+            <h3>Study &amp; Track Progress</h3>
+            <p>Review flashcards, take quizzes, chat with your docs, and monitor your mastery through the analytics dashboard with streaks and visual insights.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section class="section stack" id="stack">
+    <div class="container">
+      <p class="eyebrow">Tech Stack</p>
+      <h2 class="sec-title">Built with Modern Technology</h2>
+      <div class="stack-groups">
+        <div class="stack-group">
+          <p class="stack-label">Frontend</p>
+          <div class="stack-chips">
+            <span>React (Vite)</span>
+            <span>Tailwind CSS</span>
+            <span>Recharts</span>
+          </div>
+        </div>
+        <div class="stack-divider"></div>
+        <div class="stack-group">
+          <p class="stack-label">Backend</p>
+          <div class="stack-chips">
+            <span>Node.js</span>
+            <span>Express.js</span>
+            <span>MongoDB</span>
+          </div>
+        </div>
+        <div class="stack-divider"></div>
+        <div class="stack-group">
+          <p class="stack-label">AI &amp; Cloud</p>
+          <div class="stack-chips">
+            <span>Google Gemini AI</span>
+            <span>Cloudinary</span>
+            <span>JWT Auth</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / About -->
+  <section class="section cta-section" id="about">
+    <div class="container">
+      <div class="cta-card">
+        <div class="cta-glow g1"></div>
+        <div class="cta-glow g2"></div>
+        <p class="eyebrow" style="-webkit-text-fill-color:unset">Built by Students, for Students</p>
+        <h2 class="cta-heading">Transform the Way You Study</h2>
+        <p class="cta-sub">MemoraX was built by <strong>Swetalin Rout</strong> — a BTech CS student who got tired of passive, inefficient studying. Open-source and always improving.</p>
+        <div class="cta-btns">
+          <a href="https://memora-x-8xq4.vercel.app/" target="_blank" class="btn-primary">
+            <span>Try MemoraX</span><span class="btn-icon">↗</span>
+          </a>
+          <a href="https://github.com/swetalin-10/MemoraX" target="_blank" class="btn-ghost">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container contact-inner">
+      <h2>Ready to Study Smarter?</h2>
+      <p>Questions, feedback, or just want to connect?</p>
+      <a href="mailto:swetalinrout2006@gmail.com" class="contact-email">swetalinrout2006@gmail.com</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="footer-brand" href="#home">Memora<span>X</span></a>
+      <p class="footer-copy">© 2026 MemoraX · Built by Swetalin Rout</p>
+      <div class="footer-links">
+        <a href="https://github.com/swetalin-10" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/swetalin-rout-995763361" target="_blank">LinkedIn</a>
+        <a href="mailto:swetalinrout2006@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

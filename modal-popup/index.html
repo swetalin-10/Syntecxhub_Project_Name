@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Syntecxhub</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="page">
+    <div class="hero">
+      <p class="tag">Get In Touch</p>
+      <h1>Let's start a <span>conversation</span></h1>
+      <p class="sub">Have a project in mind or want to join our internship? We'd love to hear from you.</p>
+      <div class="btn-group">
+        <button onclick="openModal('contact')">Send a Message</button>
+        <button class="outline" onclick="openModal('info')">Learn More</button>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card" onclick="openModal('contact')">
+        <div class="card-icon">✉</div>
+        <h3>Email Us</h3>
+        <p>info@syntecxhub.com</p>
+      </div>
+      <div class="card" onclick="openModal('call')">
+        <div class="card-icon">📞</div>
+        <h3>Call Us</h3>
+        <p>+91 63937 80295</p>
+      </div>
+      <div class="card" onclick="openModal('info')">
+        <div class="card-icon">🌐</div>
+        <h3>Visit Us</h3>
+        <p>www.syntecxhub.com</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Modal -->
+  <div class="overlay" id="overlay" onclick="closeModal()"></div>
+
+  <div class="modal" id="modal-contact">
+    <button class="close" onclick="closeModal()">✕</button>
+    <h2>Send a Message</h2>
+    <p class="modal-sub">We'll get back to you within 24 hours.</p>
+    <form onsubmit="handleSubmit(event)">
+      <div class="form-row">
+        <div class="field">
+          <label>First Name</label>
+          <input type="text" placeholder="John" required/>
+        </div>
+        <div class="field">
+          <label>Last Name</label>
+          <input type="text" placeholder="Doe" required/>
+        </div>
+      </div>
+      <div class="field">
+        <label>Email Address</label>
+        <input type="email" placeholder="john@email.com" required/>
+      </div>
+      <div class="field">
+        <label>Subject</label>
+        <input type="text" placeholder="Internship Inquiry" required/>
+      </div>
+      <div class="field">
+        <label>Message</label>
+        <textarea rows="4" placeholder="Write your message here..." required></textarea>
+      </div>
+      <button type="submit" class="submit">Send Message →</button>
+    </form>
+  </div>
+
+  <div class="modal" id="modal-info">
+    <button class="close" onclick="closeModal()">✕</button>
+    <h2>About Syntecxhub</h2>
+    <p class="modal-sub">Building the next generation of tech talent.</p>
+    <div class="info-list">
+      <div class="info-item"><span>🎯</span><div><strong>Mission</strong><p>Bridging learning with practical experience through real-world internship projects.</p></div></div>
+      <div class="info-item"><span>🛠</span><div><strong>Programs</strong><p>Web Dev, UI/UX, Frontend, Backend, Data Science and more.</p></div></div>
+      <div class="info-item"><span>📜</span><div><strong>Certificate</strong><p>Earn a verified certificate on successful completion of all tasks.</p></div></div>
+      <div class="info-item"><span>🌍</span><div><strong>Remote</strong><p>100% remote internship — work from anywhere, at your own pace.</p></div></div>
+    </div>
+    <button class="submit" onclick="closeModal(); setTimeout(()=>openModal('contact'),200)">Apply Now →</button>
+  </div>
+
+  <div class="modal" id="modal-call">
+    <button class="close" onclick="closeModal()">✕</button>
+    <h2>Call Us</h2>
+    <p class="modal-sub">Available Mon–Sat, 10am – 6pm IST</p>
+    <div class="call-box">
+      <div class="call-icon">📞</div>
+      <h3>+91 63937 80295</h3>
+      <p>Click to copy</p>
+    </div>
+    <button class="submit" onclick="navigator.clipboard.writeText('+916393780295'); this.textContent='Copied! ✓'">Copy Number</button>
+  </div>
+
+  <div class="toast" id="toast">Message sent successfully! ✓</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
