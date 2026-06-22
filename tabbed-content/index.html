@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TabbedView</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="logo">TabbedView</div>
+      <p class="subtitle">Everything you need, one place</p>
+    </header>
+
+    <div class="tabs-wrap">
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-tab="overview"  role="tab" aria-selected="true">Overview</button>
+        <button class="tab"        data-tab="features"  role="tab" aria-selected="false">Features</button>
+        <button class="tab"        data-tab="team"      role="tab" aria-selected="false">Team</button>
+        <button class="tab"        data-tab="contact"   role="tab" aria-selected="false">Contact</button>
+      </div>
+    </div>
+
+    <div class="content-area">
+
+      <!-- Overview -->
+      <div class="tab-panel active" id="panel-overview" role="tabpanel">
+        <div class="panel-header">
+          <span class="panel-icon">&#128640;</span>
+          <h2>What We Do</h2>
+          <p>We build thoughtful digital experiences that help people work smarter and live better.</p>
+        </div>
+        <div class="cards-grid">
+          <div class="info-card">
+            <div class="card-icon">&#9889;</div>
+            <h3>Fast &amp; Reliable</h3>
+            <p>Performance-first approach — every interaction feels instant and smooth.</p>
+          </div>
+          <div class="info-card">
+            <div class="card-icon">&#127919;</div>
+            <h3>Purpose Driven</h3>
+            <p>Every feature we ship solves a real problem for real people.</p>
+          </div>
+          <div class="info-card">
+            <div class="card-icon">&#128274;</div>
+            <h3>Secure by Default</h3>
+            <p>Security is baked in from day one, not bolted on as an afterthought.</p>
+          </div>
+        </div>
+        <div class="stats-row">
+          <div class="stat"><span>12K+</span><small>Active Users</small></div>
+          <div class="stat"><span>99.9%</span><small>Uptime</small></div>
+          <div class="stat"><span>48</span><small>Countries</small></div>
+          <div class="stat"><span>4.9&#9733;</span><small>Rating</small></div>
+        </div>
+      </div>
+
+      <!-- Features -->
+      <div class="tab-panel" id="panel-features" role="tabpanel">
+        <div class="panel-header">
+          <span class="panel-icon">&#10024;</span>
+          <h2>Core Features</h2>
+          <p>Everything you need, nothing you don't. Designed to stay out of your way.</p>
+        </div>
+        <div class="feature-list">
+          <div class="feature-item">
+            <div class="feature-check">&#10003;</div>
+            <div>
+              <h4>Real-time Collaboration</h4>
+              <p>Work alongside your team with live changes, comments, and version history.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-check">&#10003;</div>
+            <div>
+              <h4>Smart Notifications</h4>
+              <p>Get notified about what matters. Mute the rest. Full control, no noise.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-check">&#10003;</div>
+            <div>
+              <h4>Cross-Platform Support</h4>
+              <p>Works seamlessly on desktop, tablet, and mobile — no native app required.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-check">&#10003;</div>
+            <div>
+              <h4>Advanced Analytics</h4>
+              <p>Understand what's happening with clear, actionable data at a glance.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-check">&#10003;</div>
+            <div>
+              <h4>API Access</h4>
+              <p>Connect your existing tools with our well-documented REST API.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team -->
+      <div class="tab-panel" id="panel-team" role="tabpanel">
+        <div class="panel-header">
+          <span class="panel-icon">&#128101;</span>
+          <h2>Our Team</h2>
+          <p>A small, focused group of people who genuinely care about the work.</p>
+        </div>
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="avatar" style="background: linear-gradient(135deg, #7c6aff, #a78bfa)">AK</div>
+            <h4>Arjun Kapoor</h4>
+            <span class="role">Founder &amp; CEO</span>
+            <p>Obsessed with product quality and building things that last.</p>
+          </div>
+          <div class="team-card">
+            <div class="avatar" style="background: linear-gradient(135deg, #22c55e, #16a34a)">PM</div>
+            <h4>Priya Mehta</h4>
+            <span class="role">Head of Design</span>
+            <p>Believes great design is invisible — it just works, always.</p>
+          </div>
+          <div class="team-card">
+            <div class="avatar" style="background: linear-gradient(135deg, #f59e0b, #d97706)">RS</div>
+            <h4>Rohan Sharma</h4>
+            <span class="role">Lead Engineer</span>
+            <p>Writes clean code and cares deeply about performance.</p>
+          </div>
+          <div class="team-card">
+            <div class="avatar" style="background: linear-gradient(135deg, #ef4444, #dc2626)">NJ</div>
+            <h4>Neha Joshi</h4>
+            <span class="role">Growth Lead</span>
+            <p>Connects the right people with the right product at the right time.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="tab-panel" id="panel-contact" role="tabpanel">
+        <div class="panel-header">
+          <span class="panel-icon">&#9993;&#65039;</span>
+          <h2>Get In Touch</h2>
+          <p>Have a question or want to work with us? We'd love to hear from you.</p>
+        </div>
+        <div class="contact-layout">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="nameInput">Name</label>
+              <input id="nameInput" type="text" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="emailInput">Email</label>
+              <input id="emailInput" type="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="msgInput">Message</label>
+              <textarea id="msgInput" placeholder="Tell us what's on your mind..." rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn-send">Send Message &rarr;</button>
+            <div class="form-success hidden" id="formSuccess">
+              &#10003;&ensp;Message sent! We'll get back to you soon.
+            </div>
+          </form>
+          <div class="contact-info">
+            <div class="contact-detail">
+              <div class="contact-icon">&#128231;</div>
+              <div>
+                <h4>Email</h4>
+                <p>hello@example.com</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-icon">&#128205;</div>
+              <div>
+                <h4>Location</h4>
+                <p>Bangalore, India</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-icon">&#9200;</div>
+              <div>
+                <h4>Office Hours</h4>
+                <p>Mon &ndash; Fri, 9am &ndash; 6pm IST</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

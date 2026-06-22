@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QuizTime</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="quiz-header">
+      <div class="logo">QuizTime</div>
+      <div class="progress-wrap">
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <span class="progress-text" id="progressText">1 / 10</span>
+      </div>
+    </div>
+
+    <div class="quiz-card" id="quizCard">
+      <div class="question-num" id="questionNum">Question 1</div>
+      <div class="question-text" id="questionText"></div>
+      <div class="options" id="optionsList"></div>
+      <div class="card-footer">
+        <span class="score-badge">Score: <span id="liveScore">0</span></span>
+        <button class="btn-next" id="nextBtn" disabled>Next &rarr;</button>
+      </div>
+    </div>
+
+    <div class="result-card hidden" id="resultCard">
+      <div class="result-icon" id="resultIcon"></div>
+      <div class="result-title" id="resultTitle"></div>
+      <div class="result-score" id="resultScore"></div>
+      <p class="result-msg" id="resultMsg"></p>
+      <div class="result-breakdown" id="resultBreakdown"></div>
+      <button class="btn-restart" id="restartBtn">Try Again</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

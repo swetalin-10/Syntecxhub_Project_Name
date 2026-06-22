@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ImageSlide</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="slider-header">
+      <div class="logo">ImageSlide</div>
+      <p class="tagline">Five frames worth remembering</p>
+    </div>
+
+    <div class="slider-wrap">
+      <div class="slider" id="slider">
+
+        <div class="slide" style="background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%)">
+          <div class="slide-content">
+            <span class="slide-tag">Nature</span>
+            <h2>Northern Lights</h2>
+            <p>Auroras dancing across the Arctic sky in waves of green and violet.</p>
+          </div>
+        </div>
+
+        <div class="slide" style="background: linear-gradient(135deg, #b34000 0%, #fc4a1a 40%, #f7b733 100%)">
+          <div class="slide-content">
+            <span class="slide-tag">Landscape</span>
+            <h2>Golden Sunset</h2>
+            <p>The sun dips below the mountains, painting the horizon in fire and amber.</p>
+          </div>
+        </div>
+
+        <div class="slide" style="background: linear-gradient(135deg, #021b79 0%, #0575e6 55%, #00c3ff 100%)">
+          <div class="slide-content">
+            <span class="slide-tag">Ocean</span>
+            <h2>Deep Blue Sea</h2>
+            <p>Endless depths stretch beneath the surface, quiet and impossibly vast.</p>
+          </div>
+        </div>
+
+        <div class="slide" style="background: linear-gradient(135deg, #1a4a2e 0%, #11998e 50%, #38ef7d 100%)">
+          <div class="slide-content">
+            <span class="slide-tag">Forest</span>
+            <h2>Emerald Forest</h2>
+            <p>Ancient trees tower above, filtering light through a canopy of deep green.</p>
+          </div>
+        </div>
+
+        <div class="slide" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #4a0a3f 100%)">
+          <div class="slide-content">
+            <span class="slide-tag">Urban</span>
+            <h2>City After Dark</h2>
+            <p>Neon reflections pulse across wet streets as the city hums into the night.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="nav-btn prev" id="prevBtn" aria-label="Previous slide">&#8592;</button>
+      <button class="nav-btn next" id="nextBtn" aria-label="Next slide">&#8594;</button>
+
+      <div class="dots" id="dots"></div>
+
+      <button class="autoplay-btn" id="autoplayBtn" aria-label="Pause autoplay" title="Toggle autoplay">&#9646;&#9646;</button>
+    </div>
+
+    <div class="slide-counter">
+      <span id="currentNum">1</span>&ensp;/&ensp;<span>5</span>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
