@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FlowBoard — Kanban</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="logo">📋 FlowBoard</div>
+      <span class="count-badge" id="totalCount">0 tasks</span>
+    </header>
+
+    <div class="board">
+      <section class="column" data-status="todo">
+        <div class="col-header todo-color">
+          <span>To Do</span>
+          <span class="col-count" id="count-todo">0</span>
+        </div>
+        <div class="add-row">
+          <input type="text" placeholder="Add a task..." data-status="todo" />
+          <button data-status="todo">+</button>
+        </div>
+        <div class="cards" id="list-todo"></div>
+      </section>
+
+      <section class="column" data-status="doing">
+        <div class="col-header doing-color">
+          <span>Doing</span>
+          <span class="col-count" id="count-doing">0</span>
+        </div>
+        <div class="add-row">
+          <input type="text" placeholder="Add a task..." data-status="doing" />
+          <button data-status="doing">+</button>
+        </div>
+        <div class="cards" id="list-doing"></div>
+      </section>
+
+      <section class="column" data-status="done">
+        <div class="col-header done-color">
+          <span>Done</span>
+          <span class="col-count" id="count-done">0</span>
+        </div>
+        <div class="add-row">
+          <input type="text" placeholder="Add a task..." data-status="done" />
+          <button data-status="done">+</button>
+        </div>
+        <div class="cards" id="list-done"></div>
+      </section>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

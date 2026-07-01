@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SkyCast — Weather</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="logo">☁️ SkyCast</div>
+      <button id="settingsBtn" class="icon-btn" title="API key settings">⚙</button>
+    </header>
+
+    <div class="search-row">
+      <input id="cityInput" type="text" placeholder="Search for a city..." autocomplete="off" />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div id="message" class="message hidden"></div>
+
+    <div id="loader" class="loader hidden"><div class="spinner"></div></div>
+
+    <div id="card" class="card hidden">
+      <div class="card-top">
+        <div>
+          <h1 id="city">--</h1>
+          <span id="date"></span>
+        </div>
+        <img id="icon" alt="weather icon" />
+      </div>
+
+      <div class="temp-row">
+        <span id="temp">--°</span>
+        <span id="condition">--</span>
+      </div>
+
+      <div class="details">
+        <div class="detail">
+          <span class="d-label">Feels like</span>
+          <span id="feels" class="d-value">--°</span>
+        </div>
+        <div class="detail">
+          <span class="d-label">Humidity</span>
+          <span id="humidity" class="d-value">--%</span>
+        </div>
+        <div class="detail">
+          <span class="d-label">Wind</span>
+          <span id="wind" class="d-value">-- km/h</span>
+        </div>
+        <div class="detail">
+          <span class="d-label">Pressure</span>
+          <span id="pressure" class="d-value">-- hPa</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="keyModal" class="modal-overlay hidden">
+    <div class="modal">
+      <h2>Connect OpenWeatherMap</h2>
+      <p>Paste your free API key to enable live weather. Get one at
+        <a href="https://openweathermap.org/api" target="_blank" rel="noopener">openweathermap.org</a>.
+      </p>
+      <input id="apiKeyInput" type="text" placeholder="Your API key" />
+      <div class="modal-actions">
+        <button id="saveKeyBtn">Save & Continue</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
